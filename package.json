@@ -14,7 +14,7 @@
   "author": "Matt Hink <mhink1103@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "electron": "^1.6.2",
+    "electron": "^2.0.18",
     "react-dom": "16.0.0-alpha.5"
   },
   "peerDependencies": {
