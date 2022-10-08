@@ -1,0 +1,37 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - electron > electron-download > debug:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > nugget > debug:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > sumchecker > debug:
+        patched: '2022-10-08T21:23:49.762Z'
+  'npm:extend:20180424':
+    - electron > electron-download > nugget > request > extend:
+        patched: '2022-10-08T21:23:49.762Z'
+  'npm:hoek:20180212':
+    - electron > electron-download > nugget > request > hawk > hoek:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > nugget > request > hawk > boom > hoek:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > nugget > request > hawk > sntp > hoek:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > nugget > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-10-08T21:23:49.762Z'
+  'npm:ms:20170412':
+    - electron > electron-download > debug > ms:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > nugget > debug > ms:
+        patched: '2022-10-08T21:23:49.762Z'
+    - electron > electron-download > sumchecker > debug > ms:
+        patched: '2022-10-08T21:23:49.762Z'
+  'npm:stringstream:20180511':
+    - electron > electron-download > nugget > request > stringstream:
+        patched: '2022-10-08T21:23:49.762Z'
+  'npm:tough-cookie:20170905':
+    - electron > electron-download > nugget > request > tough-cookie:
+        patched: '2022-10-08T21:23:49.762Z'
