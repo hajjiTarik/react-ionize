@@ -9,13 +9,16 @@
     "build": "babel -d lib/ src/",
     "test": "mocha-webpack --webpack-config webpack.test.config.js \"test/**/*.spec.js\"",
     "preversion": "yarn flow && yarn test && yarn build",
-    "postversion": "npm publish && git push origin --tags"
+    "postversion": "npm publish && git push origin --tags",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Matt Hink <mhink1103@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "electron": "^1.6.2",
-    "react-dom": "16.0.0-alpha.5"
+    "electron": "^19.0.15",
+    "react-dom": "16.5.0",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": "16.0.0-alpha.5"
@@ -76,8 +79,9 @@
     "webpack": "^2.3.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-node-externals": "^1.5.4",
-    "electron": "^1.6.2",
-    "react-dom": "16.0.0-alpha.5",
+    "electron": "^19.0.15",
+    "react-dom": "16.5.0",
     "react": "16.0.0-alpha.5"
-  }
+  },
+  "snyk": true
 }
